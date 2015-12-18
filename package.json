@@ -1,0 +1,16 @@
+{
+    "name": "dugun-query-string",
+    "description": "Controls query string and hash easily.",
+    "authors": [
+        "Ege Sertçetin"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/duguncom/dugun-query-string.git"
+    },
+    "homepage": "https://github.com/duguncom/dugun-query-string",
+    "dependencies": {
+        "gulp": "^3.9.0",
+        "gulp-concat": "^2.3.3"
+    }
+}
