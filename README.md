@@ -4,7 +4,7 @@ Controls query string and hash easily.
 ## Installation
 Install the package using bower:
 
-    bower install --asve dg-query-string
+    bower install --save dg-query-string
     
 The include it as a dependency in your project:
     
