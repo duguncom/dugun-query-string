@@ -27,6 +27,7 @@ function DugunQueryString($location, moment) {
     };
 
     this.setFilters = function(filterObj) {
+        filterObj = clearFormControllerProperties(filterObj);
         filterObj = convertBooleanToString(filterObj);
         $location.search(filterObj);
     };
@@ -108,6 +109,16 @@ function DugunQueryString($location, moment) {
             } else if(typeof object[i] === 'boolean') {
                 object[i] = object[i] ? 'true' : 'false';
             } else if(typeof object[i] === 'string' && object[i] === '') {
+                delete object[i];
+            }
+        }
+        return object;
+    }
+
+    function clearFormControllerProperties(object) {
+        var i;
+        for(i in object) {
+            if(i.substring(0, 1) === '$') {
                 delete object[i];
             }
         }
