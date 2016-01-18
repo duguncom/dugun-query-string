@@ -1,6 +1,6 @@
 {
   "name": "dugun-query-string",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Controls query string and hash easily.",
   "authors": [
     "Ege Sertçetin"
