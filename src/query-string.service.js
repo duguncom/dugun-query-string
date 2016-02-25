@@ -44,8 +44,7 @@ function DugunQueryString($location, moment) {
 
         var filters = this.filters;
 
-        if(!this.filters) this.getFilters();
-        filters = {};
+        if(!this.filters) filters = this.getFilters();
 
         if(filters[filterName + 'Start']) {
             dates.startDate = moment(filters[filterName + 'Start']);
