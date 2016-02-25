@@ -4,7 +4,7 @@ Controls query string and hash easily.
 ## Installation
 Install the package using bower:
 
-    bower install --asve dg-query-string
+    bower install --save dg-query-string
     
 The include it as a dependency in your project:
     
@@ -16,12 +16,12 @@ The include it as a dependency in your project:
 
 To make it available in your controllers, just use it as any other service:
 
-    angular.module('app').controller('MyController', ['dgQueryString', MyController]);
+    angular.module('app').controller('MyController', ['queryString', MyController]);
     
-    function MyController(dgQueryString) {
-        $scope.filters = dgQueryString.getFilters();
+    function MyController(queryString) {
+        $scope.filters = queryString.getFilters();
         
         $scope.setFilters = function() {
-            dgQueryString.setFilters(angular.copy($scope.filters);
+            queryString.setFilters(angular.copy($scope.filters);
         }
     }
