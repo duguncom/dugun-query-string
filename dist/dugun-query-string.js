@@ -82,7 +82,7 @@ function DugunQueryString($location, moment) {
                 object[i] = convertNumbers(object[i]);
             } else if(object[i] === 'true' || object[i] === 'false') {
                 object[i] = object[i] === 'true' ? true : false;
-            } else if(!isNaN(object[i]) && object[i] !== '' && typeof object[i] !== 'boolean') {
+            } else if(!isNaN(object[i]) && object[i] !== '' && typeof object[i] !== 'boolean' && i != 'phone') {
                 object[i] = parseFloat(object[i]);
             }
         }
